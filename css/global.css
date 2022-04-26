@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1f1f1f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-fa-icon {
+  font-size: 30px;
+}
+
+.are-display {
+  display: block;
+}
+
+.non-display {
+  display: none;
+}
