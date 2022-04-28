@@ -7,5 +7,5 @@ function activeBtn(id) {
         }    
     } 
 
-    document.getElementById(id).classList.toggle("active-1");
+    document.getElementById(id).classList.toggle('active-1');
 }

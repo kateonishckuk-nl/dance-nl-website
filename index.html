@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/section-about.css">
     <link rel="stylesheet" href="css/button-section.css">  
     <link rel="stylesheet" href="css/popup-item.css">
+    <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/dropdowns.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,33 +119,33 @@
                 <nav class="catalog-nav">
                     <ul class="catalog-nav__wrapper">
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem1()">Взуття Жіноче</button>
+                            <button class="catalog-nav__btn" id="-1" type="button" onclick="activeCatalogItem(id)">Взуття Жіноче</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem2()">Взуття Чоловіче</button>
+                            <button class="catalog-nav__btn" id="-2" type="button" onclick="activeCatalogItem(id)">Взуття Чоловіче</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem3()">Стрічки</button>
+                            <button class="catalog-nav__btn" id="-3" type="button" onclick="activeCatalogItem(id)">Стрічки</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem4()">Тканина</button>
+                            <button class="catalog-nav__btn" id="-4" type="button" onclick="activeCatalogItem(id)">Тканина</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem6()">Стрази</button>
+                            <button class="catalog-nav__btn" id="-5" type="button" onclick="activeCatalogItem(id)">Бахрома</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem5()">Бахрома</button>
+                            <button class="catalog-nav__btn" id="-6" type="button" onclick="activeCatalogItem(id)">Стрази</button>
                         </li>         
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem7()">Одяг Жіночий</button>
+                            <button class="catalog-nav__btn" id="-7" type="button" onclick="activeCatalogItem(id)">Одяг Жіночий</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button" onclick="activeCatalogItem8()">Одяг Чоловічий</button>
+                            <button class="catalog-nav__btn" id="-8" type="button" onclick="activeCatalogItem(id)">Одяг Чоловічий</button>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <div class="catalog" id="catalog-1" style="display: flex;">
+            <div class="catalog" id="catalog-1a" style="display: none;">
                 <div class="catalog__item">
                     <div class="product catalog__product">
                         <div class="product__content">        
@@ -152,7 +153,1417 @@
                                 <i class="fa-regular fa-gem"></i>&nbspБалетки
                             </h3>
                             <div class="product-img__container">
-                                <a href="#popup-1" class="content__image popup-link">
+                                <a href="#popup-200" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-200">
+                                <a href="#" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-1">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="01323" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">18"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #1 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">  
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-201" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249466016_183321423962212_3725014229316995004_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-201">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249466016_183321423962212_3725014229316995004_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="01423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03423" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #2 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-202" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249468955_849162355774032_3540572391895668039_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-202">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249468955_849162355774032_3540572391895668039_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="01582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="07813" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="01463" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #3 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-203" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249474649_592607372087781_1148147376069579464_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-203">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249474649_592607372087781_1148147376069579464_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="05231582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="034341582" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="013434582" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #4 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-204" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249475196_6537970579609591_373052991659478063_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-204">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249475196_6537970579609591_373052991659478063_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="238923" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="34223" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #5 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-205" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249475391_410825057434532_8044650566701445111_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-205">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">This is a modal window #1.</div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="product-img__item" src="img/pictures/lists/woman/249475391_410825057434532_8044650566701445111_n.jpg" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="34123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="343123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3253123" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #6 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-7" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249480581_1267804540311646_8985229366276070526_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-7">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249480581_1267804540311646_8985229366276070526_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="033453123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="031245633" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #7 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-8" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249480998_556867308707493_3941780212450509855_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-8">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249480998_556867308707493_3941780212450509855_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143683" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0351544" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345534" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #8 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-9" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249481005_3045596715720076_7995203877908218403_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-9">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249481005_3045596715720076_7995203877908218403_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03532323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0342323" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03434123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #9 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-10" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249481005_3045596715720076_7995203877908218403_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-10">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249481005_3045596715720076_7995203877908218403_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03343123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0314343" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #10 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-11" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249482349_609390150099999_3775044628303542618_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-11">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249482349_609390150099999_3775044628303542618_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0314323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0314523" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345523" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #11 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-12" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249487003_4895049610527654_1779649452136872784_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-12">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-143">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249487003_4895049610527654_1779649452136872784_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #12 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-13" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249487015_427320979003301_7568642328214123434_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-13">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249487015_427320979003301_7568642328214123434_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0312323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313223" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0315323" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #13 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-14" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249487166_749705576430565_4127837752392826728_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-14">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249487166_749705576430565_4127837752392826728_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #14 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-15" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249502210_3029111307364202_1406276338302105131_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup-16" id="popup">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249502210_3029111307364202_1406276338302105131_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0334123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #15 -->
+            </div>
+            <div class="catalog" id="catalog-1b" style="display: none;">
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">        
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-200" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249512853_931195814149009_674367877119013232_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-200">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-1">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249512853_931195814149009_674367877119013232_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="01323" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">18"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #1 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">  
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-201" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249512853_931195814149009_674367877119013232_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-201">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249512853_931195814149009_674367877119013232_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="01423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03423" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #2 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-202" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249521408_561488431510570_6155346040718264376_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-202">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249521408_561488431510570_6155346040718264376_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="01582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="07813" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="01463" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #3 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-203" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249534367_309570004007381_3605250963257987727_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-203">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249534367_309570004007381_3605250963257987727_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="05231582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="034341582" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="013434582" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #4 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-204" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249542973_405151377919776_7074156008890357061_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-204">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249542973_405151377919776_7074156008890357061_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="238923" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="34223" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #5 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-205" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249562025_301727735117732_7172391311257340092_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-205">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">This is a modal window #1.</div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="product-img__item" src="img/pictures/lists/woman/249562025_301727735117732_7172391311257340092_n.jpg" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="34123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="343123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3253123" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #6 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-206" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249562200_259772319303621_5435277597215295248_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-7">
+                                <a href="#popup-206" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249562200_259772319303621_5435277597215295248_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="033453123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="031245633" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #7 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-8" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249568087_600363584423109_1981393623931785177_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-8">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249568087_600363584423109_1981393623931785177_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143683" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0351544" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345534" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #8 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-9" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249588297_1021709901944083_5153584309521149562_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-9">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249588297_1021709901944083_5153584309521149562_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03532323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0342323" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03434123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #9 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-10" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249588528_1241755036333923_4726061688482246818_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-10">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249588528_1241755036333923_4726061688482246818_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03343123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0314343" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #10 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-11" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249588530_1549633405411962_7080326785633827895_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-11">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249588530_1549633405411962_7080326785633827895_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0314323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0314523" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345523" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #11 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-12" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249588540_463622745059740_832390217344807328_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-12">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-143">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249588540_463622745059740_832390217344807328_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #12 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-13" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249594125_686316252345012_6447506355309667807_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-13">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249594125_686316252345012_6447506355309667807_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0312323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313223" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0315323" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #13 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-14" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249594130_275086301289689_6348290336663301435_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-14">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249594130_275086301289689_6348290336663301435_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #14 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-15" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249595431_763177851148425_1293741523308323147_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup-16" id="popup">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249595431_763177851148425_1293741523308323147_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0334123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #15 -->
+            </div>     
+            <div class="catalog" id="catalog-1c" style="display: none;">
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">        
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-301" class="content__image popup-link">
                                     <img class="product-img__item" src="img/pictures/lists/woman/248427187_1387232218338307_3581861098294535674_n.jpg" alt="product image">
                                 </a>
                             </div>
@@ -161,8 +1572,717 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </span>
                             </p>
-                            <div class="popup" id="popup-1">
+                            <div class="popup" id="popup-301">
+                                <a href="#" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-1">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/248427187_1387232218338307_3581861098294535674_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="01323" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">18"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #1 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">  
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-2" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249156636_625547938803375_3895323940032841203_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-2">
                                 <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249156636_625547938803375_3895323940032841203_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="01423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03423" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div> <!-- item #2 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-3" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249262342_1076042143146935_6259910195119577939_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-3">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249262342_1076042143146935_6259910195119577939_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="01582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="07813" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="01463" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #3 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-4" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249295928_1451040931918953_6212125507409356152_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-4">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249295928_1451040931918953_6212125507409356152_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="05231582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="034341582" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="013434582" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #4 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-5" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249317982_1595339024000246_27834291625140020_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-5">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249317982_1595339024000246_27834291625140020_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="238923" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="34223" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #5 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-6" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249336668_269529838514797_2768953384020427317_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-6">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">This is a modal window #1.</div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="product-img__item" src="img/pictures/lists/woman/249336668_269529838514797_2768953384020427317_n.jpg" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="34123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="343123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3253123" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #6 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-7" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249359520_1633620163646459_6390137664715771210_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-7">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249359520_1633620163646459_6390137664715771210_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="033453123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="031245633" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #7 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-8" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-8">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143683" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0351544" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345534" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #8 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-9" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249376569_314095243456227_7459433760579185147_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-9">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249376569_314095243456227_7459433760579185147_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03532323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0342323" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03434123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #9 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-10" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249385697_1485516111828719_3851337355768905604_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-10">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249385697_1485516111828719_3851337355768905604_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03343123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0314343" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #10 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-11" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249386740_2375670649233502_1656398455436976320_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-11">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249386740_2375670649233502_1656398455436976320_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0314323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0314523" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345523" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #11 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-12" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249465981_443954194071243_482038642560252294_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-12">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content" id="popup__content-143">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249465981_443954194071243_482038642560252294_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #12 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-13" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249465987_1161710321019705_8066352889336941056_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-13">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249465987_1161710321019705_8066352889336941056_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0312323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313223" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0315323" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #13 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-14" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249465996_258554172896355_5327077994031955835_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-14">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249465996_258554172896355_5327077994031955835_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="03143323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #14 -->
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки&nbsp<i class="fa-regular fa-gem"></i>
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-15" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/249465999_3960279290738526_8819725890040217505_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup-16" id="popup">
+                                <a href="#header" class="popup__area"></a>
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <a href="#" class="popup__close">X</a>
+                                        <div class="popup__title">
+                                            This is a modal window #1.
+                                        </div>
+                                        <a href="#popup__image" alt="popup image">
+                                            <img class="popup__picture" src="img/img/lists/woman/249465999_3960279290738526_8819725890040217505_n.jpg" alt="popup picture">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0334123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
+                            </div>
+                            <div class="product__bottom">
+                                <div class="product__price">
+                                    <span class="product__price-value">275</span>
+                                    <span class="product__currency">&#8372;</span>
+                                </div>
+                                <button class="btn product__btn" type="button">Переглянути</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>  <!-- item #15 -->
+            </div>
+            <div class="catalog" id="catalog-1d" style="display: none;"></div>
+            <div class="catalog" id="catalog-1e" style="display: none;"></div>
+            <div class="catalog" id="catalog-1f" style="display: none;"></div>
+            <div class="catalog" id="catalog-1g" style="display: none;"></div>
+            <div class="catalog" id="catalog-1" style="display: flex;">
+                <div class="catalog__item">
+                    <div class="product catalog__product">
+                        <div class="product__content">        
+                            <h3 class="product__title">
+                                <i class="fa-regular fa-gem"></i>&nbspБалетки
+                            </h3>
+                            <div class="product-img__container">
+                                <a href="#popup-301" class="content__image popup-link">
+                                    <img class="product-img__item" src="img/pictures/lists/woman/248427187_1387232218338307_3581861098294535674_n.jpg" alt="product image">
+                                </a>
+                            </div>
+                            <p class="product__description">
+                                <span class="product__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span>
+                            </p>
+                            <div class="popup" id="popup-301">
+                                <a href="#" class="popup__area"></a>
                                 <div class="popup__body">
                                     <div class="popup__content" id="popup__content-1">
                                         <a href="#" class="popup__close">X</a>
@@ -857,7 +2977,7 @@
                                 <i class="fa-regular fa-gem"></i>&nbspТуфлі&nbsp<i class="fa-regular fa-gem"></i>
                             </h3>
                             <div class="product-img__container">
-                                <a href="#popup" class="content__image popup-link">
+                                <a href="#popup-2001" class="content__image popup-link">
                                     <img class="product-img__item" src="img/pictures/lists/man/249356687_579072006639380_7101818445121776383_n.jpg" alt="product image">
                                 </a>
                             </div>
@@ -866,7 +2986,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </span>
                             </p>
-                            <div class="popup" id="popup">
+                            <div class="popup" id="popup-2001">
                                 <a href="#header" class="popup__area"></a>
                                 <div class="popup__body">
                                     <div class="popup__content">
@@ -904,7 +3024,7 @@
                                 <i class="fa-regular fa-gem"></i>&nbspТуфлі&nbsp<i class="fa-regular fa-gem"></i>
                             </h3>
                             <div class="product-img__container">
-                                <a href="#popup-17" class="content__image popup-link">
+                                <a href="#popup-2002" class="content__image popup-link">
                                     <img class="product-img__item" src="img/pictures/lists/man/249367351_405807691238162_4036268299346637840_n.jpg" alt="product image">
                                 </a>
                             </div>
@@ -913,7 +3033,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </span>
                             </p>
-                            <div class="popup" id="popup-17">
+                            <div class="popup" id="popup-2002">
                                 <a href="#header" class="popup__area"></a>
                                 <div class="popup__body">
                                     <div class="popup__content">
@@ -951,7 +3071,7 @@
                                 <i class="fa-regular fa-gem"></i>&nbspТуфлі&nbsp<i class="fa-regular fa-gem"></i>
                             </h3>
                             <div class="product-img__container">
-                                <a href="#popup-18" class="content__image popup-link">
+                                <a href="#popup-2003" class="content__image popup-link">
                                     <img class="product-img__item" src="img/pictures/lists/man/249468963_923378715251562_5507368761161636929_n.jpg" alt="product image">
                                 </a>
                             </div>
@@ -960,7 +3080,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </span>
                             </p>
-                            <div class="popup" id="popup-18">
+                            <div class="popup" id="popup-2003">
                                 <a href="#header" class="popup__area"></a>
                                 <div class="popup__body">
                                     <div class="popup__content">
@@ -998,7 +3118,7 @@
                                 <i class="fa-regular fa-gem"></i>&nbspТуфлі&nbsp<i class="fa-regular fa-gem"></i>
                             </h3>
                             <div class="product-img__container">
-                                <a href="#popup-19" class="content__image popup-link">
+                                <a href="#popup-2004" class="content__image popup-link">
                                     <img class="product-img__item" src="img/pictures/lists/man/249474658_192360249709963_8545585418111427838_n.jpg" alt="product image">
                                 </a>
                             </div>
@@ -1007,7 +3127,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </span>
                             </p>
-                            <div class="popup" id="popup-19">
+                            <div class="popup" id="popup-2004">
                                 <a href="#header" class="popup__area"></a>
                                 <div class="popup__body">
                                     <div class="popup__content">
@@ -3574,12 +5694,24 @@
                                 <button class="btn product__btn" type="button">Переглянути</button>
                             </div>
                         </footer>
+                        <div>
+                        </div>
                     </div>
                 </div>  <!-- item #16 -->
             </div>
             <div class="catalog" id="catalog-7" style="display: none;">
             </div>
             <div class="catalog" id="catalog-8" style="display: none;">
+            </div>
+            <div class="pagination__wrap">
+                <ul class="pagination__list">
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1a" onclick="activeCatalogItem(id)">1</button></li>
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1b" onclick="activeCatalogItem(id)">2</button></li>
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1c" onclick="activeCatalogItem(id)">3</button></li>
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1d" onclick="activeCatalogItem(id)">4</button></li>
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1e" onclick="activeCatalogItem(id)">5</button></li>
+                    <li class="pagination__list-item"><button class="pagination__list-btn" type="button" id="-1f" onclick="activeCatalogItem(id)">6</button></li>
+                </ul>
             </div>
         </div>
     </section>

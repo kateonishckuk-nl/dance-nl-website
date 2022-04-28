@@ -1,185 +1,51 @@
-const catalog_1 = document.getElementById('catalog-1');
-const catalog_2 = document.getElementById('catalog-2');
-const catalog_3 = document.getElementById('catalog-3');
-const catalog_4 = document.getElementById('catalog-4');
-const catalog_5 = document.getElementById('catalog-5');
-const catalog_6 = document.getElementById('catalog-6');
-const catalog_7 = document.getElementById('catalog-7');
-const catalog_8 = document.getElementById('catalog-8');
+const catalog_tags = document.querySelectorAll('.catalog');
+let paginationBtns = document.querySelectorAll('.pagination__list-btn');
+let paginationBlock = document.querySelector('.pagination__wrap');
 
-function activeCatalogItem1() {
-    if (catalog_1.style.display === 'none') {
-        catalog_1.style.display = 'flex';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
+let n = "";
+let catalog_item;
+
+function activeCatalogItem(id) {
+
+    if (id === '-1a' || id === '-1b' || id === '-1c' || id === '-1d' || id === '-1e' || id === '-1f' || id === '-1g') {
+        n = "catalog" + id;
+        catalog_item = document.getElementById(n);
+    
+        for (let catalog_tag of catalog_tags) {
+            catalog_tag.style.display = 'none';
+        }
+    
+        if (catalog_item.style.display === 'none') {
+            catalog_item.style.display = 'flex';
+        } else {
+            catalog_item.style.display = 'none';
+        }
+
+        for (let paginationBtn of paginationBtns) {
+            if (paginationBtn.classList.contains('active-pagination')) {
+                paginationBtn.classList.remove('active-pagination');
+            }    
+        }
+
+        document.getElementById(id).classList.toggle('active-pagination');
     } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'flex';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
+        n = "catalog" + id;
+        let catalog_item = document.getElementById(n);
+    
+        for (let catalog_tag of catalog_tags) {
+            catalog_tag.style.display = 'none';
+        }
+    
+        if (catalog_item.style.display === 'none') {
+            catalog_item.style.display = 'flex';
+        } else {
+            catalog_item.style.display = 'none';
+        }
+    }
+
+    if (id === '-2' || id === '-3' || id === '-4' || id === '-5' || id === '-6' || id === '-7' || id === '-8') {
+        paginationBlock.style.display = 'none';
+    } else {
+        paginationBlock.style.display = 'block';
     }
 }
-
-function activeCatalogItem2() {
-    if (catalog_2.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'flex';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'flex';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem3() {
-    if (catalog_3.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'flex';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'flex';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem4() {
-    if (catalog_4.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'flex';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'flex';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem5() {
-    if (catalog_5.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'flex';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'flex';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem6() {
-    if (catalog_6.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'flex';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'flex';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem7() {
-    if (catalog_3.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'flex';
-        catalog_8.style.display = 'none';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'flex';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'none';
-    }
-}
-
-function activeCatalogItem8() {
-    if (catalog_3.style.display === 'none') {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'none';
-        catalog_8.style.display = 'flex';
-    } else {
-        catalog_1.style.display = 'none';
-        catalog_2.style.display = 'none';
-        catalog_3.style.display = 'none';
-        catalog_4.style.display = 'none';
-        catalog_5.style.display = 'none';
-        catalog_6.style.display = 'none';
-        catalog_7.style.display = 'flex';
-        catalog_8.style.display = 'none';
-    }
-}
-

@@ -1,0 +1,28 @@
+.pagination__list {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.pagination__list-item {
+    padding: 10px;
+}
+
+.pagination__list-btn {
+    color: #fff; 
+    background: #383d3f; 
+    border-radius: 100%; 
+    font-size: 24px; 
+    font-weight: 700; 
+    padding: 15px;
+    cursor: pointer;
+}
+
+.pagination__list-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.active-pagination {
+    color: #fff;
+    background: #1699c1;
+}
