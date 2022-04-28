@@ -2,6 +2,18 @@
   color: #ffffff;
 }
 
+.dropdown-content.show a {
+  color: #ffffff;
+  background: #e44141;
+  border-bottom: 1px solid #97bddf;
+}
+
+.dropdown-content.show a:hover,
+.dropdown-content.show a:focus {
+  color: #e8dbdb;
+  background: #de7e7e;
+}
+
 .nav-brand__menu {
   margin-right: 0;
   margin-left: 0;
@@ -267,7 +279,6 @@
   .dropdown-content.show > a {
     height: 80px;
     font-size: 38px;
-    border-bottom: 1px solid #087808;
   } 
 }
 
@@ -834,6 +845,10 @@
   background: #b21739;
 }
 
+.product-img__item:hover {
+  opacity: 0.6;
+}
+
 .socials {
   list-style: none;
   margin: 0;
@@ -885,5 +900,5 @@
 
 .active-1 {
   background-color: red;
-  color: rgb(160, 94, 222);
+  color: #fff;
 }

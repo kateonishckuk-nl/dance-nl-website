@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/section-top.css">
     <link rel="stylesheet" href="css/section-about.css">
+    <link rel="stylesheet" href="css/button-section.css">  
     <link rel="stylesheet" href="css/popup-item.css">
     <link rel="stylesheet" href="css/dropdowns.css">
-    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
@@ -23,9 +24,7 @@
         <nav class="nav-brand">
             <a href="#" class="nav-brand__link">
                 <img class="main-logo" src="./img/pictures/logo/250121631_1007872053123970_8228331009995455492_n.jpg" alt="dance nl main logo">
-                <i class="fa-solid fa-spa"></i>
                 <span class="main-logo__text">DANCE NL Studio</span>
-                <i class="fa-solid fa-spa"></i>
             </a>
             <div class="nav-brand__wrapper" id="nav-brand__wrapper">
                 <div class="nav-brand__container" id="nav-brand__container">
@@ -33,55 +32,54 @@
                         <li class="nav-brand__menu-item">
                             <div class="dropdown">
                                 <button id="1" onclick="myFunction(id)" class="dropbtn">
-                                    <i class="fa-solid fa-person-running"></i>Взуття
+                                    <i class="fa-solid fa-shoe-prints"></i>&nbspВзуття
                                 </button>
                                 <div id="myDropdown-1" class="dropdown-content">
-                                    <a href="#woman_standart">Жіночий стандарт</a>
-                                    <a href="#man_standart">Чоловічий стандарт</a>
-                                    <a href="#populists">Народники</a>
-                                    <a href="#woman_latina">Жіноча латина</a>
-                                    <a href="#man_latina">Чоловіча латина</a>
+                                    <a href="#woman_standart"><i class="fa-solid fa-person-dress"></i>&nbspЖіночий стандарт</a>
+                                    <a href="#man_standart"><i class="fa-solid fa-person"></i>&nbspЧоловічий стандарт</a>
+                                    <a href="#populists"><i class="fa-solid fa-people-pulling"></i>&nbspНародники</a>
+                                    <a href="#woman_latina"><i class="fa-solid fa-person-skating"></i>&nbspЖіноча латина</a>
+                                    <a href="#man_latina"><i class="fa-solid fa-person-burst"></i>&nbspЧоловіча латина</a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-brand__menu-item">
                             <div class="dropdown">
                                 <button id="2" onclick="myFunction(id)" class="dropbtn">
-                                    <i class="fa-solid fa-person-running"></i>
-                                    <span>Одяг</span>
+                                    <i class="fa-solid fa-users-viewfinder"></i>&nbspОдяг
                                 </button>
                                 <div id="myDropdown-2" class="dropdown-content">
-                                    <a href="#shirt">Сорочка</a>
-                                    <a href="#combidress">Комбідрес</a>
-                                    <a href="#trousers">Штани</a>
+                                    <a href="#shirt"><i class="fa-solid fa-shirt"></i>&nbspСорочка</a>
+                                    <a href="#combidress"><i class="fa-solid fa-user-tie"></i>&nbspКомбідрес</a>
+                                    <a href="#trousers"><i class="fa-solid fa-shield"></i>&nbspШтани</a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-brand__menu-item">
                             <div class="dropdown">
                                 <button id="3" onclick="myFunction(id)" class="dropbtn">
-                                    <i class="fa-solid fa-person-running"></i>Аксесуари
+                                    <i class="fa-brands fa-slack"></i>&nbspАксесуари
                                 </button>
                                 <div id="myDropdown-3" class="dropdown-content">
-                                    <a href="#neckbands">Стразова стрічка</a>
-                                    <a href="#guards">Ланцюги</a>
-                                    <a href="#rigilene">Регилін (Кринолін)</a>
-                                    <a href="#fringe">Бахрома</a>
-                                    <a href="#feathers">Пір'я</a>
-                                    <a href="#dmc_chaina_hotfix">Стрази DMC (Китай) HotFix</a>
-                                    <a href="#premius_hotfix">Стрази Преміум HotFix</a>
-                                    <a href="#non-hotfix_coldfix">Стрази Non HotFix ColdFix</a>
-                                    <a href="#dnc_ss16_ss20_ss30">Набори DMC ss16.ss20.ss30</a>
+                                    <a href="#neckbands"><i class="fa-solid fa-ribbon"></i>&nbspСтразова стрічка</a>
+                                    <a href="#guards"><i class="fa-brands fa-vaadin"></i>&nbspЛанцюги</a>
+                                    <a href="#rigilene"><i class="fa-brands fa-hornbill"></i>&nbspРегилін (Кринолін)</a>
+                                    <a href="#fringe"><i class="fa-solid fa-hurricane"></i>&nbspБахрома</a>
+                                    <a href="#feathers"><i class="fa-solid fa-wind"></i>&nbspПір'я</a>
+                                    <a href="#dmc_chaina_hotfix"><i class="fa-brands fa-sketch"></i>&nbspСтрази DMC (Китай) HotFix</a>
+                                    <a href="#premius_hotfix"><i class="fa-brands fa-ioxhost"></i>&nbspСтрази Преміум HotFix</a>
+                                    <a href="#non-hotfix_coldfix"><i class="fa-brands fa-instalod"></i>&nbspСтрази Non HotFix ColdFix</a>
+                                    <a href="#dnc_ss16_ss20_ss30"><i class="fa-solid fa-ring"></i>&nbspНабори DMC ss16.ss20.ss30</a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-brand__menu-item">
                             <div class="dropdown">
                                 <button id="4" onclick="myFunction(id)" class="dropbtn">
-                                    <i class="fa-solid fa-person-running"></i>Одяг для дівчат
+                                    <i class="fa-solid fa-child-dress"></i>&nbspОдяг для дівчат
                                 </button>
                                 <div id="myDropdown-4" class="dropdown-content">
-                                    <a href="#dress_for_little_princess">Плаття бейсік</a>
+                                    <a href="#dress_for_little_princess"><i class="fa-solid fa-person-dress"></i>&nbspПлаття бейсік</a>
                                 </div>
                             </div>
                         </li>
@@ -89,7 +87,7 @@
                 </div>
             </div>
             <button class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-sliders"></i>
             </button>
         </nav>  
     </header>
@@ -99,7 +97,14 @@
                 <p class="section-top__info"><i>From master with love !!!</i></p>
                 <h1 class="section-top__title">Найкращий одяг для спортивно-бального танцю</h1>
                 <div class="section-top__btn">
-                    <button class="btn" type="button">Обрати</button>
+                    <!-- <button class="btn" type="button">Обрати</button> -->
+                    <a class="section-top-button" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa-brands fa-linode"></i>&nbspОбрати
+                    </a>
                 </div>
             </div>
         </div>
@@ -173,9 +178,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24"</button>
-                                <button class="product__size" type="button">22"</button>
-                                <button class="product__size" type="button">18"</button>
+                                <button class="product__size" id="03123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="01323" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">18"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -220,9 +225,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03523" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="01423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03423" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -267,9 +272,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="01582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="07813" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="01463" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -314,9 +319,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="05231582" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="034341582" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="013434582" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -361,9 +366,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="238923" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="34223" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -406,9 +411,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="343123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3253123" ype="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -453,9 +458,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="033453123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="031245633" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -492,7 +497,7 @@
                                             This is a modal window #1.
                                         </div>
                                         <a href="#popup__image" alt="popup image">
-                                            <img class="popup__picture" src="img/img/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="popup picture">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249466004_242898827905056_3281158812266380114_n.jpg" alt="popup picture">
                                         </a>
                                     </div>
                                 </div>
@@ -500,9 +505,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03143683" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0351544" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345534" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -547,9 +552,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03532323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0342323" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03434123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -594,9 +599,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03343123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313423" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0314343" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -641,9 +646,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0314323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0314523" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0345523" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -680,7 +685,7 @@
                                             This is a modal window #1.
                                         </div>
                                         <a href="#popup__image" alt="popup image">
-                                            <img class="popup__picture" src="img/img/lists/woman/249465981_443954194071243_482038642560252294_n.jpg" alt="popup picture">
+                                            <img class="popup__picture" src="img/pictures/lists/woman/249465981_443954194071243_482038642560252294_n.jpg" alt="popup picture">
                                         </a>
                                     </div>
                                 </div>
@@ -688,9 +693,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -735,9 +740,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0312323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0313223" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0315323" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -782,9 +787,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03143323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -829,9 +834,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0233123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0334123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -878,9 +883,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24"</button>
-                                <button class="product__size" type="button">22"</button>
-                                <button class="product__size" type="button">18"</button>
+                                <button class="product__size" id="5673123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="631723" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="04533123" type="button" onclick="activeBtn(id)">18"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -925,9 +930,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="13123123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="43233123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="232103123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -972,9 +977,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="323033123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="123203123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="341203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1019,9 +1024,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="5403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="4303123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="4303123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1066,9 +1071,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="3403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="3423123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="3431523" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1111,9 +1116,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="6403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="543123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="66503123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1158,9 +1163,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="4603123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="45403123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="65403123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1205,9 +1210,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34303123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="3403123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="2403123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1252,9 +1257,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="043323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="334443123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="04333123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1299,9 +1304,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="464503123"  type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="453503123"  type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="532403123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1346,9 +1351,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0344323123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="4320433123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0433343123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1393,9 +1398,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03433123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0343123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="04233123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1440,9 +1445,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0433123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="32303123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1487,9 +1492,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="6654603123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="73803123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0576453123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1534,9 +1539,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0148473563" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0453543123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0454534123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1583,9 +1588,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24"</button>
-                                <button class="product__size" type="button">22"</button>
-                                <button class="product__size" type="button">18"</button>
+                                <button class="product__size" id="3403123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="0433123" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="4303123" type="button" onclick="activeBtn(id)">18"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1630,9 +1635,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0314323" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0315323" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0431235" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1677,9 +1682,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="033123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0433123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="033123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1724,9 +1729,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="03423123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="043243123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1771,9 +1776,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="04333123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="04333123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0542433123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1816,9 +1821,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="04343123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="04323123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="4345034123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1863,9 +1868,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="2320233123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="140423123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="232103123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1910,9 +1915,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="54343203123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="432403123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="4123203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -1957,9 +1962,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="5324303123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="434203123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="343403123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2004,9 +2009,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="6445403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="353203123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="4325203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2051,9 +2056,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="4322503123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="243303123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="325303123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2098,9 +2103,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="45403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="54303123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="43503123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2145,9 +2150,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34303123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="53203123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="34203123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2192,9 +2197,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="4503123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="453403123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="630315423" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2239,9 +2244,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="5722703123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="8364303123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="8234203123"  type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2288,9 +2293,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24"</button>
-                                <button class="product__size" type="button">22"</button>
-                                <button class="product__size" type="button">18"</button>
+                                <button class="product__size" id="43203123" type="button" onclick="activeBtn(id)">24"</button>
+                                <button class="product__size" id="03243123" type="button" onclick="activeBtn(id)">22"</button>
+                                <button class="product__size" id="0334123" type="button" onclick="activeBtn(id)">18"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2335,9 +2340,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34203123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="03423123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="043433123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2382,9 +2387,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34334303123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="43203123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="03412123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2429,9 +2434,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="34343d03123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0345323123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="32423503123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2476,9 +2481,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="3432403123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="56425403123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="32423403123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2521,9 +2526,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0554534453123" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="540453543123" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="6344503463123" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2568,9 +2573,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="0342433843" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="0424343983" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="0455253863" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2615,9 +2620,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03454233176" type="button" onclick="activeBtn(id)">24&nbsp"</button>
+                                <button class="product__size" id="04345433161" type="button" onclick="activeBtn(id)">22&nbsp"</button>
+                                <button class="product__size" id="04234325463" type="button" onclick="activeBtn(id)">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2662,9 +2667,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03153454523" type="button">24&nbsp"</button>
+                                <button class="product__size" id="03123534454" type="button">22&nbsp"</button>
+                                <button class="product__size" id="04322354234" type="button">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2711,9 +2716,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24"</button>
-                                <button class="product__size" type="button">22"</button>
-                                <button class="product__size" type="button">18"</button>
+                                <button class="product__size" id="0536543123" type="button">24"</button>
+                                <button class="product__size" id="3645453423" type="button">22"</button>
+                                <button class="product__size" id="0382456123" type="button">18"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -2758,9 +2763,9 @@
                         </div>
                         <footer class="product__footer">
                             <div class="product__sizes">
-                                <button class="product__size" type="button">24&nbsp"</button>
-                                <button class="product__size" type="button">22&nbsp"</button>
-                                <button class="product__size" type="button">18&nbsp"</button>
+                                <button class="product__size" id="03453233123" type="button">24&nbsp"</button>
+                                <button class="product__size" id="14332403123" type="button">22&nbsp"</button>
+                                <button class="product__size" id="03243253123" type="button">18&nbsp"</button>
                             </div>
                             <div class="product__bottom">
                                 <div class="product__price">
@@ -3570,7 +3575,7 @@
                             </div>
                         </footer>
                     </div>
-            </div>  <!-- item #16 -->
+                </div>  <!-- item #16 -->
             </div>
             <div class="catalog" id="catalog-7" style="display: none;">
             </div>
@@ -3599,41 +3604,48 @@
                 <div class="contacts__end">
                     <div class="contacts__item">
                         <h3 class="contacts__title">
-                            <object data="img/pictures/basic-touch-ui-svgrepo-com.svg" width="25" height="25"></object>                          
-                            Адреса:
+                            <i class="fa-solid fa-location-dot"></i>&nbspАдреса :
                         </h3>
                         <p class="contacts__text">м. Рівне, вул. Степана Дем'янчука</p>
                     </div>
                     <div class="contacts__item">
                         <h3 class="contacts__title">
-                            <object data="img/pictures/basic-touch-ui-svgrepo-com.svg" width="25" height="25"></object>          
-                            Телефон:
+                            <i class="fa-solid fa-mobile"></i>&nbspТелефон :
                         </h3>
                         <p class="contacts__text">
                             <a class="contacts__phone" href="tel:+380970000000">
-                                (097) 000-00-00
+                                <i>(097) 000-00-00</i>
                             </a>
                         </p>
                     </div>
                     <div class="contacts__item">
                         <h3 class="contacts__title">
-                            <object data="img/pictures/basic-touch-ui-svgrepo-com.svg" width="25" height="25"></object>          
-                            Соціальні Мережі:
+                            <i class="fa-regular fa-message"></i>&nbspСоціальні Мережі :
                         </h3>
                         <ul class="socials">
                             <li class="socials__item">
                                 <a href="#" class="socials__link" target="_blank">
-    
+                                    <i class="fa-brands fa-viber"></i>
                                 </a>
                             </li>
                             <li class="socials__item">
                                 <a href="#" class="socials__link" target="_blank">
-
+                                    <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li class="socials__item">
                                 <a href="#" class="socials__link" target="_blank">
-
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-telegram"></i>
                                 </a>
                             </li>
                         </ul>
@@ -3641,7 +3653,7 @@
                 </div>
                 <div class="contacts__start">
                     <div class="contacts__map">
-                        <img class="contacts__map-image" src="img/maps/rivne_city_stepana_demyanchuka_st.jpg" alt="stepana demyanchuka st map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.957985910467!2d26.28348762627413!3d50.61009890922431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f136f7ba34483%3A0xea68695767ae6c85!2z0KDRltCy0L3QtSwg0KDRltCy0L3QtdC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCAzMzAwMA!5e0!3m2!1suk!2snl!4v1651149811736!5m2!1suk!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -3650,12 +3662,12 @@
     <footer class="footer-page">
         <div class="container">
             <div class="footer-page__text">
-                Dance Nl Studio | 2022
+                <i class="fa-solid fa-leaf"></i>&nbspDance Nl Studio | 2022
             </div>
         </div>
     </footer>
 
-    <script src="assets/fontawesome-free-6.1.1-web/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/dropdowns.js"></script>
     <script src="js/active_catalog_items.js"></script>
     <script src="js/menu_items.js"></script>
